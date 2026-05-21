@@ -1,8 +1,8 @@
 cask "baby-menu" do
-  version "0.1.0"
-  sha256 "f24a4919f915c0e0ebfbbb43b3d5f989d9b2b56ccaf45c3f6267785c5155940e"
+  version "0.1.1"
+  sha256 "b411ab6d6f8070a828b25fddac1d0e49978faa28979fe1614dd4e032531637b8"
 
-  url "https://github.com/kunchenguid/baby-menu/releases/download/v#{version}/Baby-Menu-#{version}-universal.dmg"
+  url "https://github.com/kunchenguid/baby-menu/releases/download/baby-menu-v0.1.1/Baby-Menu-0.1.1-universal.dmg"
   name "Baby Menu"
   desc "Menu-bar app that writes its own widgets"
   homepage "https://github.com/kunchenguid/baby-menu"
@@ -10,7 +10,6 @@ cask "baby-menu" do
   depends_on macos: ">= :ventura"
 
   app "Baby Menu.app"
-
   uninstall quit: "com.kunchenguid.baby-menu"
 
   postflight do
