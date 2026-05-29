@@ -1,8 +1,8 @@
 cask "baby-menu" do
-  version "0.1.7"
-  sha256 "7d4bdd01aac6a32bb8b294ac78fddf0835a2d7c0530c26b393d363d6d2a53f51"
+  version "0.1.8"
+  sha256 "6c11de5a0b6c7fed507e5fd8b8e1b69f5a24e0814e60eed3eb9553d16750fbcc"
 
-  url "https://github.com/kunchenguid/baby-menu/releases/download/baby-menu-v0.1.7/Baby-Menu-0.1.7-universal.dmg"
+  url "https://github.com/kunchenguid/baby-menu/releases/download/baby-menu-v0.1.8/Baby-Menu-0.1.8-universal.dmg"
   name "Baby Menu"
   desc "Menu-bar app that writes its own widgets"
   homepage "https://github.com/kunchenguid/baby-menu"
@@ -11,6 +11,26 @@ cask "baby-menu" do
 
   app "Baby Menu.app"
   uninstall quit: "com.kunchenguid.baby-menu"
+
+  uninstall_preflight do
+    next unless system("/usr/bin/pgrep", "-x", "Baby Menu", out: File::NULL, err: File::NULL)
+
+    system_command "/usr/bin/nohup", args: ["/bin/sh", "-c", <<~RELAUNCH_SCRIPT], must_succeed: false
+      (
+        while [ -e "#{appdir}/Baby Menu.app" ]; do
+          /bin/sleep 1
+        done
+
+        for _ in $(/usr/bin/seq 1 60); do
+          if [ -x "#{appdir}/Baby Menu.app/Contents/MacOS/Baby Menu" ]; then
+            /usr/bin/open -a "#{appdir}/Baby Menu.app"
+            exit 0
+          fi
+          /bin/sleep 1
+        done
+      ) >/dev/null 2>&1 &
+    RELAUNCH_SCRIPT
+  end
 
   postflight do
     system_command "/usr/bin/xattr",
