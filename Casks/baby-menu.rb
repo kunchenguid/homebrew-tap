@@ -7,7 +7,7 @@ cask "baby-menu" do
   desc "Menu-bar app that writes its own widgets"
   homepage "https://github.com/kunchenguid/baby-menu"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Baby Menu.app"
   uninstall quit: "com.kunchenguid.baby-menu"

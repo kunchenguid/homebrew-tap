@@ -7,7 +7,7 @@ cask "hi-bit" do
   desc "Local-first app where kids build web projects with Bit"
   homepage "https://github.com/kunchenguid/hi-bit"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Hi-Bit.app"
   uninstall quit: "com.hibit.app"

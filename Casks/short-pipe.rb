@@ -7,7 +7,7 @@ cask "short-pipe" do
   desc "Turn long-form video into captioned vertical shorts, locally"
   homepage "https://github.com/kunchenguid/short-pipe"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Short Pipe.app"
   uninstall quit: "com.shortpipe.app"
