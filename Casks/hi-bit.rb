@@ -1,8 +1,8 @@
 cask "hi-bit" do
-  version "0.0.7"
-  sha256 "2f3f3c43147f7cba1739dd75ac63882fae370863be5f0aeddac8e06aa8ee1f72"
+  version "0.0.8"
+  sha256 "bf5fe00ae2732ad34e3de0ffd9ab1b294a302ec7e70e3369abaa767a5f00cc18"
 
-  url "https://github.com/kunchenguid/hi-bit/releases/download/hi-bit-v0.0.7/Hi-Bit-0.0.7-universal.dmg"
+  url "https://github.com/kunchenguid/hi-bit/releases/download/hi-bit-v0.0.8/Hi-Bit-0.0.8-universal.dmg"
   name "Hi-Bit"
   desc "Local-first app where kids build web projects with Bit"
   homepage "https://github.com/kunchenguid/hi-bit"
