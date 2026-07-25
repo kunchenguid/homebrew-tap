@@ -1,8 +1,8 @@
 cask "baby-menu" do
-  version "0.1.23"
-  sha256 "6ae2953839d8b70661c926b39cd334dfe965b14ecd04152809aef7fa251d8274"
+  version "0.1.24"
+  sha256 "0e419ca4b4044e6b3b44b6eaa579cbe89256dc64ec5e6b32f21ff03513659bdd"
 
-  url "https://github.com/kunchenguid/baby-menu/releases/download/baby-menu-v0.1.23/Baby-Menu-0.1.23-universal.dmg"
+  url "https://github.com/kunchenguid/baby-menu/releases/download/baby-menu-v0.1.24/Baby-Menu-0.1.24-universal.dmg"
   name "Baby Menu"
   desc "Menu-bar app that writes its own widgets"
   homepage "https://github.com/kunchenguid/baby-menu"
