@@ -1,8 +1,8 @@
 cask "short-pipe" do
-  version "0.0.9"
-  sha256 "868e5a18e7e2c79749b09001586906be933ceb46afb5133ff839524a9799fb39"
+  version "0.0.10"
+  sha256 "86c4ed5ffc6e68643576ec889bbfda0b0ca267ec6714e63f49afb6032b2b0128"
 
-  url "https://github.com/kunchenguid/short-pipe/releases/download/short-pipe-v0.0.9/Short-Pipe-0.0.9-universal.dmg"
+  url "https://github.com/kunchenguid/short-pipe/releases/download/short-pipe-v0.0.10/Short-Pipe-0.0.10-universal.dmg"
   name "Short Pipe"
   desc "Turn long-form video into captioned vertical shorts, locally"
   homepage "https://github.com/kunchenguid/short-pipe"
