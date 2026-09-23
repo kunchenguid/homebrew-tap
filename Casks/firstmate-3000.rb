@@ -1,8 +1,8 @@
 cask "firstmate-3000" do
-  version "0.1.1"
-  sha256 "37d6eeff2e9f9a7253e5f900a677affb0847269cc90503b5a28917e0af290fe2"
+  version "0.1.2"
+  sha256 "d5024c823683319546a4f3ac0630ce8c630f0afa0eca6e3e24d3e848d002e888"
 
-  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v0.1.1/Firstmate-3000-0.1.1-universal.zip"
+  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v0.1.2/Firstmate-3000-0.1.2-universal.zip"
   name "Firstmate 3000"
   desc "Calm desktop first officer that runs AI crew on your own subscriptions"
   homepage "https://github.com/kunchenguid/homebrew-tap"
@@ -14,7 +14,7 @@ cask "firstmate-3000" do
   uninstall quit: "com.kunchenguid.firstmate3000"
 
   zap trash: [
-    "~/Library/Application Support/Firstmate 3000",
+    "~/Library/Application Support/firstmate-3000",
     "~/Library/Caches/com.kunchenguid.firstmate3000",
     "~/Library/Preferences/com.kunchenguid.firstmate3000.plist",
     "~/Library/Saved Application State/com.kunchenguid.firstmate3000.savedState",
