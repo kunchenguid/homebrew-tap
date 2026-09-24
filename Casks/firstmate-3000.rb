@@ -1,8 +1,8 @@
 cask "firstmate-3000" do
-  version "0.1.5"
-  sha256 "1c183be3978db71029084f04100e23adaeabc6d1c1bc6dce8b577946f99b91b3"
+  version "0.1.6"
+  sha256 "b0b89dbaf38c356ca95b45b0cac7373f9d6fd9c2134cfed5d14d23a47cf86e41"
 
-  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v0.1.5/Firstmate-3000-0.1.5-universal.zip"
+  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v0.1.6/Firstmate-3000-0.1.6-universal.zip"
   name "Firstmate 3000"
   desc "Calm desktop first officer that runs AI crew on your own subscriptions"
   homepage "https://github.com/kunchenguid/homebrew-tap"
