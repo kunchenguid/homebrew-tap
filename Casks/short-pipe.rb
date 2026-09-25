@@ -12,10 +12,8 @@ cask "short-pipe" do
   app "Short Pipe.app"
   uninstall quit: "com.shortpipe.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Short Pipe.app"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Short Pipe.app"], must_succeed: false
   end
 
   zap trash: [
