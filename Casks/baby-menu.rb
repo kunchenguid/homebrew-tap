@@ -32,10 +32,10 @@ cask "baby-menu" do
     RELAUNCH_SCRIPT
   end
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Baby Menu.app"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/Baby Menu.app"],
+        must_succeed: false
   end
 
   zap trash: [
