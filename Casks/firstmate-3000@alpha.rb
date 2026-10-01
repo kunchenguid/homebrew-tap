@@ -1,20 +1,20 @@
-cask "firstmate-3000" do
+cask "firstmate-3000@alpha" do
   version "0.1.25"
   sha256 "82c0acc98249dacc01e65c3a5cfe2eb374db17a3eb6741f3ae3e9ba1b50f8540"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v#{version}/Firstmate-3000-#{version}-universal.zip"
-  name "Firstmate 3000"
+  name "Firstmate 3000 Alpha"
   desc "Calm desktop first officer that runs AI crew on your own subscriptions"
   homepage "https://github.com/kunchenguid/homebrew-tap"
 
-  conflicts_with cask: "firstmate-3000@alpha"
+  conflicts_with cask: "firstmate-3000"
   depends_on macos: :ventura
 
   app "Firstmate 3000.app"
 
   postflight_steps do
     write_file "Library/Application Support/firstmate-3000/update-channel.json",
-               "{\"schemaVersion\":1,\"channel\":\"stable\"}\n",
+               "{\"schemaVersion\":1,\"channel\":\"alpha\"}\n",
                base: :home
   end
 
@@ -42,12 +42,15 @@ cask "firstmate-3000" do
     follow at the public beta. Feedback is welcome on Kun's Discord:
     https://discord.gg/Wsy2NpnZDu
 
-    This is the stable channel. To get new versions sooner, with lighter
-    checks, switch to the alpha channel; your saved work stays in place:
+    This is the alpha channel: new versions sooner, with lighter checks,
+    and every newer stable version too. To return to the stable channel,
+    keeping your saved work in place:
 
-      brew uninstall --cask firstmate-3000
-      brew install --cask kunchenguid/tap/firstmate-3000@alpha
+      brew uninstall --cask firstmate-3000@alpha
+      brew install --cask kunchenguid/tap/firstmate-3000
 
+    If that stable version cannot open work saved by a newer alpha, it says
+    so and changes nothing; reinstall the alpha or wait for the next stable.
     Never add --zap when switching: it deletes your saved work.
   EOS
 end
