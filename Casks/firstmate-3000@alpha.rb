@@ -1,6 +1,6 @@
 cask "firstmate-3000@alpha" do
-  version "0.1.26-alpha.12"
-  sha256 "881b3cb7241f305b3151ba2cb8a52a9a74dfc58de89e506060be4929a96229e2"
+  version "0.1.26-alpha.13"
+  sha256 "6600955ddb2c0c58e4282d7b4ad741dee441a5943a62bc2a8878b7222581b62a"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Firstmate-3000-#{version}-universal.zip"
   name "Firstmate 3000 Alpha"
