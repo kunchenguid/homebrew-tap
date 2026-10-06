@@ -12,10 +12,18 @@ cask "firstmate-3000@alpha" do
 
   app "Firstmate 3000.app"
 
-  postflight_steps do
-    write_file "Library/Application Support/firstmate-3000/update-channel.json",
-               "{\"schemaVersion\":1,\"channel\":\"alpha\"}\n",
-               base: :home
+  if defined?(Homebrew::InstallSteps::DSL) && Homebrew::InstallSteps::DSL.method_defined?(:write_file)
+    postflight_steps do
+      write_file "Library/Application Support/firstmate-3000/update-channel.json",
+                 "{\"schemaVersion\":1,\"channel\":\"alpha\"}\n",
+                 base: :home
+    end
+  else
+    postflight do
+      marker = File.expand_path("~/Library/Application Support/firstmate-3000/update-channel.json")
+      FileUtils.mkdir_p File.dirname(marker)
+      File.write marker, "{\"schemaVersion\":1,\"channel\":\"alpha\"}\n"
+    end
   end
 
   uninstall quit: "com.kunchenguid.firstmate3000"
