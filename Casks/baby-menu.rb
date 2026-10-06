@@ -12,30 +12,13 @@ cask "baby-menu" do
   app "Baby Menu.app"
   uninstall quit: "com.kunchenguid.baby-menu"
 
-  uninstall_preflight do
-    next unless system("/usr/bin/pgrep", "-x", "Baby Menu", out: File::NULL, err: File::NULL)
-
-    system_command "/usr/bin/nohup", args: ["/bin/sh", "-c", <<~RELAUNCH_SCRIPT], must_succeed: false
-      (
-        while [ -e "#{appdir}/Baby Menu.app" ]; do
-          /bin/sleep 1
-        done
-
-        for _ in $(/usr/bin/seq 1 60); do
-          if [ -x "#{appdir}/Baby Menu.app/Contents/MacOS/Baby Menu" ]; then
-            /usr/bin/open -a "#{appdir}/Baby Menu.app"
-            exit 0
-          fi
-          /bin/sleep 1
-        done
-      ) >/dev/null 2>&1 &
-    RELAUNCH_SCRIPT
-  end
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Baby Menu.app"],
-                   must_succeed: false
+  # The old uninstall_preflight relaunch waited for the app bundle to be
+  # replaced and then opened it. Structured steps cannot launch apps, so that
+  # relaunch is not carried over. Quit still happens through uninstall.
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/Baby Menu.app"],
+        must_succeed: false
   end
 
   zap trash: [
