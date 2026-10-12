@@ -2,45 +2,45 @@
   "schemaVersion": 1,
   "channels": {
     "alpha": {
-      "version": "0.3.1-alpha.68",
-      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.3.1-alpha.68",
-      "sourceCommit": "186de3bd9ce1b2c149ea233eeb247648898a8089",
+      "version": "0.3.1-alpha.69",
+      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.3.1-alpha.69",
+      "sourceCommit": "f3d298d7a5509e4869baf982475a31ba425524e5",
       "systems": {
         "macos": {
           "arm64": {
             "zip": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/Firstmate-3000-0.3.1-alpha.68-universal.zip",
-              "sha256": "75da3db6381ed1fa12c21d9c03cfd26fe06e767c9b221a5886fcf0ce206b7ca8"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/Firstmate-3000-0.3.1-alpha.69-universal.zip",
+              "sha256": "79f6d08d99a7fd6249b5167ea1d16e8acd2fb2aefe08572e8818678f5a53be80"
             }
           },
           "x64": {
             "zip": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/Firstmate-3000-0.3.1-alpha.68-universal.zip",
-              "sha256": "75da3db6381ed1fa12c21d9c03cfd26fe06e767c9b221a5886fcf0ce206b7ca8"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/Firstmate-3000-0.3.1-alpha.69-universal.zip",
+              "sha256": "79f6d08d99a7fd6249b5167ea1d16e8acd2fb2aefe08572e8818678f5a53be80"
             }
           }
         },
         "linux": {
           "x64": {
             "deb": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/firstmate-3000-0.3.1-alpha.68-linux-amd64.deb",
-              "sha256": "62683aea8bec2f82c8150a07653561f9677fb5c0c538837faffa7c943030e43d"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/firstmate-3000-0.3.1-alpha.69-linux-amd64.deb",
+              "sha256": "12145bcfe1c1d6b0464c04892cfcde5a1a02a8e8971a00cf6f1579862bd6cfbd"
             },
             "rpm": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/firstmate-3000-0.3.1-alpha.68-linux-x86_64.rpm",
-              "sha256": "4da28879db68c94ed5c4d882b23f62b142767e28729d962af2b94beae5de5fd3"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/firstmate-3000-0.3.1-alpha.69-linux-x86_64.rpm",
+              "sha256": "ca973fdc80db0bf7bd561081ff0c63dbb6b6bc0816f7a634f339148689f671e3"
             },
             "appimage": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/firstmate-3000-0.3.1-alpha.68-linux-x86_64.AppImage",
-              "sha256": "6ffd13cf2333c13dd1ff669f301a603159c0914bbbad5aaa0661bb93eccb4413"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/firstmate-3000-0.3.1-alpha.69-linux-x86_64.AppImage",
+              "sha256": "aaa7b3327888aa14ab3202eff7c5c3523cc9c0c839efe6c856cf2d67ccf156ad"
             },
             "arch": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/firstmate-3000-alpha-bin-0.3.1-alpha.68.PKGBUILD",
-              "sha256": "e18b1dc3a26d42d1d4990c1752f16cde2814c22a8c5a02a8c37952c7e5cccc2d"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/firstmate-3000-alpha-bin-0.3.1-alpha.69.PKGBUILD",
+              "sha256": "712811e020004f33456a810cedf993b067aded4ec63e1d89571d9532fc39c838"
             },
             "nix": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.68/firstmate-3000-alpha-0.3.1-alpha.68.nix",
-              "sha256": "43fb1d7cfd0eba0314af3e0a62c1593c284682e819471c124d6b9eba1a7d0246"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.3.1-alpha.69/firstmate-3000-alpha-0.3.1-alpha.69.nix",
+              "sha256": "c33a007c9102e380b34abdbd09f5f713e8834aabd951f489293a4b8c5880c2a3"
             }
           }
         }
