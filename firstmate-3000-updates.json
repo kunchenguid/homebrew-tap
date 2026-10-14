@@ -9,11 +9,11 @@
       "sourceCommit": "4faee7e11533c1dccf4c14276a1826b4fa4f3005"
     },
     "alpha": {
-      "version": "0.4.0-alpha.73",
-      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.4.0-alpha.73",
-      "downloadUrl": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.4.0-alpha.73/Firstmate-3000-0.4.0-alpha.73-universal.zip",
-      "sha256": "9956a1899f2898680498e728d804919d039409350251cc2a393f74003b0595b1",
-      "sourceCommit": "218fe3687d65991e76ffd3646efba0554211a7a2"
+      "version": "0.4.0-alpha.74",
+      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.4.0-alpha.74",
+      "downloadUrl": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.4.0-alpha.74/Firstmate-3000-0.4.0-alpha.74-universal.zip",
+      "sha256": "2cd4d69cb65f77b894d7caf2731903662491abe3ebf7fe5fb446580ab09fe595",
+      "sourceCommit": "9672aefcd601bd0389c748a29059fa7d2bdb25bd"
     }
   }
 }
