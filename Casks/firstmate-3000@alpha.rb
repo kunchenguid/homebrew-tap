@@ -1,8 +1,8 @@
 cask "firstmate-3000@alpha" do
-  version "0.6.0"
-  sha256 "26fe2e2c7efb7434db92d600e515baa226af2aecdb362575b8f3de34fb676a8d"
+  version "0.6.1-alpha.30"
+  sha256 "36f608d5bdf7bcae6b45945408521a59a4e7213e62f97f544e3f6d007f48aa23"
 
-  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v#{version}/Infinitary-#{version}-universal.zip"
+  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
   desc "Calm desktop first mate that runs AI crew on your own subscriptions"
   homepage "https://getinfinitary.com/"
@@ -18,11 +18,27 @@ cask "firstmate-3000@alpha" do
                  "{\"schemaVersion\":1,\"channel\":\"alpha\",\"cameThroughOldCask\":true}\n",
                  base: :home
     end
+    preflight_steps do
+      ownership = { args: ["-w", "com.getinfinitary.installation",
+                           "1:homebrew:kunchenguid/tap/firstmate-3000@alpha",
+                           "{{staged_path}}/Infinitary.app/Contents/Info.plist"] }
+      if Homebrew::InstallSteps::DSL.instance_method(:run).parameters.include?([:key, :writable_paths])
+        ownership[:writable_paths] = ["Infinitary.app/Contents/Info.plist"]
+        ownership[:writable_base] = :staged_path
+      end
+      run "/usr/bin/xattr", **ownership
+    end
   else
     postflight do
       marker = File.expand_path("~/Library/Application Support/infinitary/update-channel.json")
       FileUtils.mkdir_p File.dirname(marker)
       File.write marker, "{\"schemaVersion\":1,\"channel\":\"alpha\",\"cameThroughOldCask\":true}\n"
+    end
+    preflight do
+      system_command "/usr/bin/xattr", args:         ["-w", "com.getinfinitary.installation",
+                                                      "1:homebrew:kunchenguid/tap/firstmate-3000@alpha",
+                                                      staged_path.join("Infinitary.app/Contents/Info.plist")],
+                                       must_succeed: true
     end
   end
 
