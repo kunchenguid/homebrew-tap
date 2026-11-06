@@ -1,6 +1,6 @@
 cask "firstmate-3000@alpha" do
-  version "0.6.3-alpha.195"
-  sha256 "cc8a89236a710845e7831c8ba6f3576b9969d5218029f734034b63816fccf4bc"
+  version "0.6.3-alpha.209"
+  sha256 "2a78d467d430ca1756d23d337a05b7d1a8279ce3b8919ac5749b1b5b529e11ac"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
@@ -57,14 +57,15 @@ cask "firstmate-3000@alpha" do
     stays stable from one build to the next. It runs entirely on your Mac
     against the subscriptions you already pay for. The one thing it sends back
     is anonymous diagnostics: a fixed set of usage events - the app opening, a
-    first mate turn finishing or failing, and how far first-time setup has come
-    - each with the app version and a random install ID that is tied to nothing
-    about you and resets whenever Diagnostics is turned off and back on, and
-    never anything you typed, so Kun can see how many people use the alpha and
-    where setup gets stuck; the app tells you on its first launch, and the
-    Diagnostics switch in Settings turns it off. The source and its license
-    follow at the public beta. Feedback is welcome on Kun's Discord:
-    https://discord.gg/Wsy2NpnZDu
+    first mate turn finishing or failing, and how far first-time setup has come,
+    plus, from an iPhone or iPad paired to it, the phone app opening, being set
+    up, sending a message and answering a card - each with the app version and a
+    random install ID that is tied to nothing about you and resets whenever
+    Diagnostics is turned off and back on, and never anything you typed, so Kun
+    can see how many people use the alpha and where setup gets stuck; the app
+    tells you on its first launch, and the Diagnostics switch in Settings turns
+    it off. The source and its license follow at the public beta. Feedback is
+    welcome on Kun's Discord: https://discord.gg/Wsy2NpnZDu
 
     This is the alpha channel: new versions sooner, with lighter checks,
     and every newer stable version too. To return to the stable channel,
