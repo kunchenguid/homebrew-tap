@@ -1,8 +1,8 @@
 cask "firstmate-3000@alpha" do
-  version "0.6.3-alpha.284"
-  sha256 "6c15e33c31ac13d79185d95b9066917a5ba70fb94e6f4b83b55fc1d172ef48e2"
+  version "0.6.3"
+  sha256 "ca00dc737e3e4c8fe510200945000b7b60db56dac077d49c32e2543fdef9d8fd"
 
-  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
+  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
   desc "Calm desktop first mate that runs AI crew on your own subscriptions"
   homepage "https://getinfinitary.com/"

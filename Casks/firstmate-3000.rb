@@ -1,6 +1,6 @@
 cask "firstmate-3000" do
-  version "0.6.2"
-  sha256 "47f280e7f77aca8f1a2fa8a40d0c436258fbe62d032e99d5811685345702339d"
+  version "0.6.3"
+  sha256 "ca00dc737e3e4c8fe510200945000b7b60db56dac077d49c32e2543fdef9d8fd"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary"
@@ -57,14 +57,15 @@ cask "firstmate-3000" do
     stays stable from one build to the next. It runs entirely on your Mac
     against the subscriptions you already pay for. The one thing it sends back
     is anonymous diagnostics: a fixed set of usage events - the app opening, a
-    first mate turn finishing or failing, and how far first-time setup has come
-    - each with the app version and a random install ID that is tied to nothing
-    about you and resets whenever Diagnostics is turned off and back on, and
-    never anything you typed, so Kun can see how many people use the alpha and
-    where setup gets stuck; the app tells you on its first launch, and the
-    Diagnostics switch in Settings turns it off. The source and its license
-    follow at the public beta. Feedback is welcome on Kun's Discord:
-    https://discord.gg/Wsy2NpnZDu
+    first mate turn finishing or failing, and how far first-time setup has come,
+    plus, from an iPhone or iPad paired to it, the phone app opening, being set
+    up, sending a message and answering a card - each with the app version and a
+    random install ID that is tied to nothing about you and resets whenever
+    Diagnostics is turned off and back on, and never anything you typed, so Kun
+    can see how many people use the alpha and where setup gets stuck; the app
+    tells you on its first launch, and the Diagnostics switch in Settings turns
+    it off. The source and its license follow at the public beta. Feedback is
+    welcome on Kun's Discord: https://discord.gg/Wsy2NpnZDu
 
     This is the stable channel. To get new versions sooner, with lighter
     checks, switch to the alpha channel; your saved work stays in place:
