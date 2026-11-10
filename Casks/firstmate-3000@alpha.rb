@@ -1,6 +1,6 @@
 cask "firstmate-3000@alpha" do
-  version "0.7.0-alpha.486"
-  sha256 "ab5c6b72d30eadb2acacf622fd17dec38822c7cda638f071de256d5193c15be7"
+  version "0.7.0-alpha.493"
+  sha256 "5aa55c950adb77fee07116c083e197c96b1afd624207c09e8ddd5be7da9b827c"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
@@ -61,11 +61,12 @@ cask "firstmate-3000@alpha" do
     plus, from an iPhone or iPad paired to it, the phone app opening, being set
     up, sending a message and answering a card - each with the app version and a
     random install ID that is tied to nothing about you and resets whenever
-    Diagnostics is turned off and back on, and never anything you typed, so Kun
-    can see how many people use the alpha and where setup gets stuck; the app
-    tells you on its first launch, and the Diagnostics switch in Settings turns
-    it off. The source and its license follow at the public beta. Feedback is
-    welcome on Kun's Discord: https://discord.gg/Wsy2NpnZDu
+    Diagnostics is turned off and back on, and never anything you typed, so
+    Infinitary Labs, Inc. can see how many people use the alpha and where setup
+    gets stuck; the app tells you on its first launch, and the Diagnostics
+    switch in Settings turns it off. The source and its license follow at the
+    public beta. Feedback is welcome on the Infinitary Discord:
+    https://discord.gg/Wsy2NpnZDu
 
     This is the alpha channel: new versions sooner, with lighter checks,
     and every newer stable version too. To return to the stable channel,
