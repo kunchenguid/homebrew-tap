@@ -1,6 +1,6 @@
 cask "firstmate-3000" do
-  version "0.7.0"
-  sha256 "b8a82c3a3a32093146d834ad2db0fd42b71ecaed428320d54670b16283f28405"
+  version "0.7.1"
+  sha256 "5837b36bb1f86f13bfa2644e318d923581706a3ffd9398d10f1fd52dc872f95a"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary"
@@ -65,8 +65,7 @@ cask "firstmate-3000" do
     Infinitary Labs, Inc. can see how many people use the alpha and where setup
     gets stuck; the app tells you on its first launch, and the Diagnostics
     switch in Settings turns it off. The source and its license follow at the
-    public beta. Feedback is welcome on the Infinitary Discord:
-    https://discord.gg/Wsy2NpnZDu
+    public beta. Feedback is welcome on Discord: https://discord.gg/Wsy2NpnZDu
 
     This is the stable channel. To get new versions sooner, with lighter
     checks, switch to the alpha channel; your saved work stays in place:
