@@ -1,6 +1,6 @@
 cask "firstmate-3000@alpha" do
-  version "0.7.2-alpha.590"
-  sha256 "5c91eeb173fa4900e538db01b5c6b216f4de60d304d2a1d3ec9a24c87e0903f4"
+  version "0.7.2-alpha.591"
+  sha256 "3d64b835e8e210a5b49471a0ae6afe514c85f521a6976aa0427eeb0e84e3311d"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
