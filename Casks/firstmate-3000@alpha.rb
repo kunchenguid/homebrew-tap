@@ -1,0 +1,81 @@
+cask "firstmate-3000@alpha" do
+  version "0.8.1-alpha.610"
+  sha256 "fab5746151159e62f42b41cf56fc7861e0e4af4710f30d6498101b57fe67edf9"
+
+  url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
+  name "Infinitary Alpha"
+  desc "Calm desktop first mate that runs AI crew on your own subscriptions"
+  homepage "https://getinfinitary.com/"
+
+  conflicts_with cask: "firstmate-3000"
+  depends_on macos: :ventura
+
+  app "Infinitary.app"
+
+  if defined?(Homebrew::InstallSteps::DSL) && Homebrew::InstallSteps::DSL.method_defined?(:write_file)
+    postflight_steps do
+      write_file "Library/Application Support/infinitary/update-channel.json",
+                 "{\"schemaVersion\":1,\"channel\":\"alpha\",\"cameThroughOldCask\":true}\n",
+                 base: :home
+    end
+    preflight_steps do
+      ownership = { args: ["-w", "com.getinfinitary.installation",
+                           "1:homebrew:kunchenguid/tap/firstmate-3000@alpha",
+                           "{{staged_path}}/Infinitary.app/Contents/Info.plist"] }
+      if Homebrew::InstallSteps::DSL.instance_method(:run).parameters.include?([:key, :writable_paths])
+        ownership[:writable_paths] = ["Infinitary.app/Contents/Info.plist"]
+        ownership[:writable_base] = :staged_path
+      end
+      run "/usr/bin/xattr", **ownership
+    end
+  else
+    postflight do
+      marker = File.expand_path("~/Library/Application Support/infinitary/update-channel.json")
+      FileUtils.mkdir_p File.dirname(marker)
+      File.write marker, "{\"schemaVersion\":1,\"channel\":\"alpha\",\"cameThroughOldCask\":true}\n"
+    end
+    preflight do
+      system_command "/usr/bin/xattr", args:         ["-w", "com.getinfinitary.installation",
+                                                      "1:homebrew:kunchenguid/tap/firstmate-3000@alpha",
+                                                      staged_path.join("Infinitary.app/Contents/Info.plist")],
+                                       must_succeed: true
+    end
+  end
+
+  uninstall quit: "com.getinfinitary.infinitary"
+
+  zap trash: [
+    "~/Library/Application Support/infinitary",
+    "~/Library/Caches/com.getinfinitary.infinitary",
+    "~/Library/Preferences/com.getinfinitary.infinitary.plist",
+    "~/Library/Saved Application State/com.getinfinitary.infinitary.savedState",
+  ]
+
+  caveats <<~EOS
+    Infinitary is in private alpha: a pre-release build for a small group of
+    early users, provided as is, with no warranty and no promise that anything
+    stays stable from one build to the next. It runs entirely on your Mac
+    against the subscriptions you already pay for. The one thing it sends back
+    is anonymous diagnostics: a fixed set of usage events - the app opening, a
+    first mate turn finishing or failing, and how far first-time setup has come,
+    plus, from an iPhone or iPad paired to it, the phone app opening, being set
+    up, sending a message and answering a card - each with the app version and a
+    random install ID that is tied to nothing about you and resets whenever
+    Diagnostics is turned off and back on, and never anything you typed, so
+    Infinitary Labs, Inc. can see how many people use the alpha and where setup
+    gets stuck; the app tells you on its first launch, and the Diagnostics
+    switch in Settings turns it off. The source and its license follow at the
+    public beta. Feedback is welcome on Discord: https://discord.gg/Wsy2NpnZDu
+
+    This is the alpha channel: new versions sooner, with lighter checks,
+    and every newer stable version too. To return to the stable channel,
+    keeping your saved work in place:
+
+      brew uninstall --cask firstmate-3000@alpha
+      brew install --cask kunchenguid/tap/firstmate-3000
+
+    If that stable version cannot open work saved by a newer alpha, it says
+    so and changes nothing; reinstall the alpha or wait for the next stable.
+    Never add --zap when switching: it deletes your saved work.
+  EOS
+end
