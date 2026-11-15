@@ -12,9 +12,7 @@ cask "baby-menu" do
   app "Baby Menu.app"
 
   postflight_steps do
-    run "/usr/bin/xattr",
-        args: ["-cr", "{{appdir}}/Baby Menu.app"],
-        must_succeed: false
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Baby Menu.app"], must_succeed: false
   end
 
   uninstall quit: "com.kunchenguid.baby-menu"
