@@ -47,45 +47,45 @@
       }
     },
     "alpha": {
-      "version": "0.8.3-alpha.632",
-      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.8.3-alpha.632",
-      "sourceCommit": "0f61afeef5e46a6d4c2d8c884eb3ef9b36971f54",
+      "version": "0.8.3-alpha.633",
+      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.8.3-alpha.633",
+      "sourceCommit": "75427ca6a19ace72938b56c7514bcd37d464fac5",
       "systems": {
         "macos": {
           "arm64": {
             "zip": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/Infinitary-0.8.3-alpha.632-universal.zip",
-              "sha256": "1eb9130ed6e40278ea23a951040d73cdc46a40069948fb100392883aec950000"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/Infinitary-0.8.3-alpha.633-universal.zip",
+              "sha256": "28eef6fffbd70bff2dcc9ddb2ea63c2a8f40567c32a78563ea311d44ebf576bd"
             }
           },
           "x64": {
             "zip": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/Infinitary-0.8.3-alpha.632-universal.zip",
-              "sha256": "1eb9130ed6e40278ea23a951040d73cdc46a40069948fb100392883aec950000"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/Infinitary-0.8.3-alpha.633-universal.zip",
+              "sha256": "28eef6fffbd70bff2dcc9ddb2ea63c2a8f40567c32a78563ea311d44ebf576bd"
             }
           }
         },
         "linux": {
           "x64": {
             "deb": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/infinitary-0.8.3-alpha.632-linux-amd64.deb",
-              "sha256": "049d03cae2aec3319735117db24009caf56633fcedd0a9a61b835ecb4ca13b5c"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/infinitary-0.8.3-alpha.633-linux-amd64.deb",
+              "sha256": "4f979fc639339848af0acaee972e2d25752a38d3e65be111d08a409ab605d34e"
             },
             "rpm": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/infinitary-0.8.3-alpha.632-linux-x86_64.rpm",
-              "sha256": "df1723bcf74006580519cba8e62c1d44169832c1280d83c2937816ec973be67f"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/infinitary-0.8.3-alpha.633-linux-x86_64.rpm",
+              "sha256": "15b741d238e11b2c065529a045037c2928b6ff3cf51c621709fab05c7c177cc9"
             },
             "appimage": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/infinitary-0.8.3-alpha.632-linux-x86_64.AppImage",
-              "sha256": "193565ef7b845c222f48634ac0bdbc23f606fa4081cc3938272fd5423b6e833f"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/infinitary-0.8.3-alpha.633-linux-x86_64.AppImage",
+              "sha256": "f3993d11fa8f1660a0834ca0cc0b87b43c0a846b7c2e5f9978389041e781db72"
             },
             "arch": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/infinitary-alpha-bin-0.8.3-alpha.632.PKGBUILD",
-              "sha256": "4a3cd93fd725f6ab0a7df87ba4076959a798424c48ee2f5d3ac2c4656c66078d"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/infinitary-alpha-bin-0.8.3-alpha.633.PKGBUILD",
+              "sha256": "5a191f97c398d4a374842d81d36fabee14e984fe397642b834bdd54cd6d8bc50"
             },
             "nix": {
-              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.632/infinitary-alpha-0.8.3-alpha.632.nix",
-              "sha256": "860f330efec3901b75915195f565f816bd1736372c4ac06fb463c24e7faba940"
+              "url": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.3-alpha.633/infinitary-alpha-0.8.3-alpha.633.nix",
+              "sha256": "697a6d70726eabfd79dcf0a524dda64d271eba2c1108651d5d20ab7f4d241ab9"
             }
           }
         }
