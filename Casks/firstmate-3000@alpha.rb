@@ -1,6 +1,6 @@
 cask "firstmate-3000@alpha" do
-  version "0.8.3-alpha.641"
-  sha256 "fa97348d2f8870df69427f3840445f72d266b1b4d7075586714335cfe531601f"
+  version "0.8.3-alpha.643"
+  sha256 "b811b1e67ffa509fb00d86ad29303b8cb8a928b79d0f89ad5b400162f39fb98f"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
@@ -63,8 +63,9 @@ cask "firstmate-3000@alpha" do
     nothing about you and resets whenever Diagnostics is turned off and back on,
     and never anything you typed, so Infinitary Labs, Inc. can see how many
     people use the alpha and where setup gets stuck; the app tells you on its
-    first launch, and the Diagnostics switch in Settings turns it off. The
-    source and its license are at
+    first launch, and the Diagnostics switch in Settings turns it off.
+    MIT-licensed builds include their license in the app bundle. The public home
+    for Infinitary’s source code and releases is
     https://github.com/infinitary-labs/infinitary-apps. The privacy policy is at
     https://getinfinitary.com/privacy. Feedback is welcome on Discord:
     https://discord.gg/Wsy2NpnZDu
