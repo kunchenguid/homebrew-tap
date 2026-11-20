@@ -1,6 +1,6 @@
 cask "firstmate-3000@alpha" do
-  version "0.8.4-alpha.649"
-  sha256 "a6720c4f650b910f957fa180d2c3f4e2bd2ed7dd780ceb51e2ad00dd54e6180d"
+  version "0.8.4-alpha.651"
+  sha256 "2cd460afa6ae4b34fd60094abfe6edb720e056cb41996faf0733cc39da458f10"
 
   url "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v#{version}/Infinitary-#{version}-universal.zip"
   name "Infinitary Alpha"
@@ -55,20 +55,23 @@ cask "firstmate-3000@alpha" do
     Infinitary is in alpha: a pre-release build, provided as is, with no
     warranty and no promise that anything stays stable from one build to the
     next. It runs entirely on your Mac against the subscriptions you already pay
-    for. The one thing it sends back is anonymous diagnostics: a fixed set of
-    usage events - the app opening, a first mate turn finishing or failing, and
-    how far first-time setup has come, plus, from an iPhone or iPad paired to
-    it, the phone app opening, being set up, sending a message and answering a
-    card - each with the app version and a random install ID that is tied to
-    nothing about you and resets whenever Diagnostics is turned off and back on,
-    and never anything you typed, so Infinitary Labs, Inc. can see how many
-    people use the alpha and where setup gets stuck; the app tells you on its
-    first launch, and the Diagnostics switch in Settings turns it off.
-    MIT-licensed builds include their license in the app bundle. The public home
-    for Infinitary’s source code and releases is
-    https://github.com/infinitary-labs/infinitary-apps. The privacy policy is at
-    https://getinfinitary.com/privacy. Feedback is welcome on Discord:
-    https://discord.gg/Wsy2NpnZDu
+    for. It sends back two things. The first is anonymous diagnostics: a fixed
+    set of usage events - the app opening, a first mate turn finishing or
+    failing, and how far first-time setup has come, plus, from an iPhone or iPad
+    paired to it, the phone app opening, being set up, sending a message and
+    answering a card - each with the app version and a random install ID that is
+    tied to nothing about you and resets whenever Diagnostics is turned off and
+    back on, and never anything you typed, so Infinitary Labs, Inc. can see how
+    many people use the alpha and where setup gets stuck; the app tells you on
+    its first launch, and the Diagnostics switch in Settings turns it off. The
+    second goes whatever Diagnostics says: a copy that checks Infinitary’s
+    download server for updates also tells Infinitary Labs, Inc. on that check
+    whether it already checked that day and that month, with no ID, so it can
+    count the computers using Infinitary. MIT-licensed builds include their
+    license in the app bundle. The public home for Infinitary’s source code and
+    releases is https://github.com/infinitary-labs/infinitary-apps. The privacy
+    policy is at https://getinfinitary.com/privacy. Feedback is welcome on
+    Discord: https://discord.gg/Wsy2NpnZDu
 
     This is the alpha channel: new versions sooner, with lighter checks,
     and every newer stable version too. To return to the stable channel,
