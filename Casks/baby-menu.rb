@@ -10,6 +10,11 @@ cask "baby-menu" do
   depends_on macos: :ventura
 
   app "Baby Menu.app"
+
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Baby Menu.app"], must_succeed: false
+  end
+
   uninstall quit: "com.kunchenguid.baby-menu"
 
   uninstall_preflight do
@@ -30,12 +35,6 @@ cask "baby-menu" do
         done
       ) >/dev/null 2>&1 &
     RELAUNCH_SCRIPT
-  end
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Baby Menu.app"],
-                   must_succeed: false
   end
 
   zap trash: [
