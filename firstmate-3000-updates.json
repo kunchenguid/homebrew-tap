@@ -9,11 +9,11 @@
       "sourceCommit": "129cab766b0c06a6737ae3aac5065c652c618a52"
     },
     "alpha": {
-      "version": "0.8.11-alpha.59",
-      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.8.11-alpha.59",
-      "downloadUrl": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.11-alpha.59/Infinitary-0.8.11-alpha.59-universal.zip",
-      "sha256": "d6e8c1b238a9dc1a3c4de23e214e49d91b48ba4047bf671609b8d0bdb296c63e",
-      "sourceCommit": "9313f9246a0a50231a7faeeb97e2a311f2d6efe8"
+      "version": "0.8.11-alpha.60",
+      "releaseUrl": "https://github.com/kunchenguid/homebrew-tap/releases/tag/firstmate-3000-alpha-v0.8.11-alpha.60",
+      "downloadUrl": "https://github.com/kunchenguid/homebrew-tap/releases/download/firstmate-3000-alpha-v0.8.11-alpha.60/Infinitary-0.8.11-alpha.60-universal.zip",
+      "sha256": "afe12f3871b01b4bba078b54165207f08257402e0ff8dd179df2348ee52a35dc",
+      "sourceCommit": "79ebabb5e4b390b977a387563226177edcf59fcc"
     }
   }
 }
