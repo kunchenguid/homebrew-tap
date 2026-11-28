@@ -1,6 +1,6 @@
 cask "pi-launcher" do
-  version "1.2.23"
-  sha256 "7bf85c30c0bd3fac3d1ae2c88ed1a681752f5fd4f150b0fca266543f5e4ceb8f"
+  version "1.2.24"
+  sha256 "02ca035f13c05031f3b34eb1956ca2e86430272374f818f1d4368ec3783bda66"
 
   url "https://github.com/kunchenguid/pi-launcher/releases/download/v#{version}/Pi-Launcher-#{version}.zip"
   name "Pi Launcher"
